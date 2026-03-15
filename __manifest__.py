@@ -14,7 +14,7 @@
     'category': 'Uncategorized',
     'version': '1.01',
 
-    'depends': ['l10n_mx_edi_stock'],
+    'depends': ['stock'],
 
     'data': [
         'data/paperformat_ticket.xml',
