@@ -77,31 +77,7 @@
           </xpath>
         <xpath expr="//h2[1]" position="after">
             <div>
-                <strong>Receptor</strong>
-            </div>
-            <div>
-                Cliente: <span t-esc="o.partner_id.name"/>
-            </div>
-            <div>
-                Dirección entrega: <span t-esc="o.partner_id.name"/>
-            </div>
-            <div>
-                RFC: <span t-esc="o.partner_id.vat"/>
-            </div>
-            <div>
-                USO CFDI: SO1 - Sin efectos fiscales
-            </div>
-            <div>
-                Exportación: O1 - No aplica
-            </div>
-            <div>
-                Domicilio fiscal: 68270
-            </div>
-            <div>
-                Regimén fiscal: 601 - General de Ley Personas Morales
-            </div>
-            <div>
-                Domicilio: CARRETERA INTERNACIONAL CRISTOBAL COLÓN 12.5 Tlalixtac de Cabrera Tlalixtac de Cabrera Oaxaca México
+                Domicilio: <span t-field="o.company_id.street"/> <span t-field="o.company_id.street2"/>
             </div>
             <div>
                 Tipo de comprobant: T - Traslado
