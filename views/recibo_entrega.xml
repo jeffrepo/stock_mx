@@ -75,6 +75,15 @@
           <xpath expr="//t[@t-call='web.external_layout']" position="attributes">
               <attribute name="t-call">web.basic_layout</attribute>
           </xpath>
+
+          <xpath expr="//h2[1]" position="replace">
+            <h2 style="margin-top: 15px;font-size:15px">
+                <strong>
+                    <span t-out="o.picking_type_id._get_code_report_name()"/>
+                    <span t-field="o.name">WH/OUT/0001</span>
+                </strong>
+            </h2>
+          </xpath>
         <xpath expr="//h2[1]" position="after">
             <div>
                 Domicilio: <span t-field="o.company_id.street"/> <span t-field="o.company_id.street2"/>
